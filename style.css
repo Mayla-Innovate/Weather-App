@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+.weather-app {
+  border: 2px solid rgba(241, 159, 5, 0.726);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 30px;
+  max-width: 1000px;
+}
+.lol {
+  color: black;
+  align-content: center;
+}
+.circle {
+  border: 100px solid;
+  color: #fcfafa;
+
+  width: 0;
+  height: 0;
+  margin-top: 45px;
+  margin-left: 0;
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  border-bottom-left-radius: 180px;
+  border-bottom-right-radius: 180px;
+}
+.col-6 .col-3 {
+  display: block;
+  margin: 0 auto;
+}
