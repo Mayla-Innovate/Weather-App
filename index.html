@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,55 +22,80 @@
       <link rel="stylesheet" href="style.css" />
 
       <form>
-        <div class="row ">
-          <div class="col-3">
+        <div class="row id=control">
+          <div class="col-6">
             <input
               type="search"
               placeholder="Enter City Name.."
               autocomplete="off"
               class="form-control"
-              id= "city-input"
+              id="city-input"
             />
           </div>
-          <div class="col-3">
-            <input type="submit" value= "search" id= "search-input" class="form-control" /> 
-          </div>
-          <div class="col-3">
-          <button
-          class="btn btn-success w-10"
-          id="current-location-button"
-        >
-          Current
-        </button>
+          <div class="col-6">
+            <input
+              type="submit"
+              value="search"
+              id="search-input"
+              class="form-control"
+            />
+
+            <button class="btn btn-light w-10" id="current-location-button">
+              Current
+            </button>
           </div>
         </div>
       </form>
-     
+      <br />
+
       <div class="row">
-        <div class="col-4" >
+        <div class="col-6">
           <div class="circle">
-          <div temperature> <span class="lol" id = "temperature"> 9 </span> <span class="units"> <a href="#" id="celcius"> °C </a> | <a href="#" id = fahrenheit>°F </a> </span> </div>
+            <h1>
+              9
+              <span class="units">
+                <a href="#"> °C </a> |
+                <a href="#">°F </a>
+              </span>
+            </h1>
+          </div>
+          <p></p>
+          <div class="col-6">
+            <ul id="conditions">
+              <li>Humidity: 50%</li>
+              <li>Chance of raining: 20%</li>
+              <li>humidity: 50%</li>
+              <li>Feels like: 3°C</li>
+            </ul>
           </div>
         </div>
-      
-      <div class="col-4">
-        <ul >
-          <li id="cityGirl">London</li>
-          <li id="date"></li>
-          <li>weather condition</li>
-        
-        </ul>
-      </div>
-      <div class="col-4">
-        <ul>
-          <li>Humidity: 50%</li>
-          <li>Chance of raining: 20%</li>
-          <li> humidity: 50% </li>
-          <li>Feels like: 3°C</li>
-        </ul>
+        <div class="col-6">
+          <ul id="conditions">
+            <li id="cityGirl">London</li>
+            <li id="date"></li>
+            <li id="weatherCondition">weather condition</li>
+          </ul>
+          <div class="container">
+            <div class="row text-center week-forecast">
+              <div class="col">Mon</div>
+              <p></p>
+              <div class="col">Tues</div>
+              <p></p>
+              <div class="col">Wed</div>
+              <p></p>
+              <div class="col">Thur</div>
+              <p></p>
+              <div class="col">Fri</div>
+              <p></p>
+              <div class="col">Sat</div>
+              <p></p>
+              <div class="col">Sun</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="index.js"></script>
-   
+    <script src="hi.js"></script>
+    <p id="footer">coded by <a href="#"> Mayla Santiago </a></p>
   </body>
 </html>

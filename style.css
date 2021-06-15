@@ -11,16 +11,21 @@ body {
   margin: 0 auto;
   margin-top: 20px;
   padding: 30px;
-  max-width: 1000px;
+  max-width: 600px;
 }
-.lol {
+.form-control {
+  min-width: 0;
+  width: auto;
+  display: inline;
+}
+.h1 {
   color: black;
-  align-content: center;
+  size: 40px;
 }
+
 .circle {
   border: 100px solid;
   color: #fcfafa;
-
   width: 0;
   height: 0;
   margin-top: 45px;
@@ -30,7 +35,9 @@ body {
   border-bottom-left-radius: 180px;
   border-bottom-right-radius: 180px;
 }
-.col-6 .col-3 {
-  display: block;
+
+.footer {
+  text-align: center;
   margin: 0 auto;
+  display: block;
 }
