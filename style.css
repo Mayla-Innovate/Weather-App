@@ -35,7 +35,15 @@ body {
   border-bottom-left-radius: 180px;
   border-bottom-right-radius: 180px;
 }
-
+h1 {
+  color: black;
+  font-size: 100px;
+  text-align: left;
+}
+.circle .units {
+  display: flex;
+  color: black;
+}
 small {
   text-align: center;
   margin: 0 auto;
