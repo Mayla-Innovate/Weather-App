@@ -29,6 +29,12 @@ function currentWeather(response) {
   );
   document.querySelector("#weatherCondition").innerHTML =
     response.data.weather[0].description;
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${respose.data.weather[0].icon}@2x.png`
+    );
 }
 function handleSubmit(event) {
   event.preventDefault();
