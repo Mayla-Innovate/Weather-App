@@ -8,15 +8,7 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Saty"];
   let day = days[date.getDay()];
   return `${day}, ${hours}:${minutes}`;
 }
