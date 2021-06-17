@@ -22,6 +22,15 @@ body {
   color: black;
   size: 40px;
 }
+li:first-letter {
+  text-transform: capitalize;
+}
+li:first-line {
+  text-decoration-line: underline;
+}
+li {
+  list-style-type: none;
+}
 
 .circle {
   border: 100px solid;
@@ -37,7 +46,7 @@ body {
 }
 h1 {
   color: black;
-  font-size: 100px;
+  font-size: 70px;
   text-align: left;
 }
 .circle .units {

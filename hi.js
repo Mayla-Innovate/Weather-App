@@ -8,7 +8,6 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
-  let dayIndex = date.getDay();
   let days = [
     "Sunday",
     "Monday",
@@ -18,12 +17,26 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
-  let day = days[dayIndex];
+  let day = days[date.getDay()];
   return `${day}, ${hours}:${minutes}`;
 }
 function currentWeather(response) {
-  document.querySelector("#cityGirl").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = response.data.main.temp;
+  console.log(response.data);
+  document.querySelector("#mainCity").innerHTML = response.data.name;
+  document.querySelector("#feelsLike").innerHTML = Math.round(
+    response.data.main.feels_like
+  );
+  document.querySelector("#temperature").innerHTML = Math.round(
+    response.data.main.temp
+  );
+  document.querySelector("#humidity").innerHTML = Math.round(
+    response.data.main.humidity
+  );
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#weatherCondition").innerHTML =
+    response.data.weather[0].description;
 }
 function handleSubmit(event) {
   event.preventDefault();
@@ -52,7 +65,7 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 function search(event) {
   event.preventDefault();
-  let cityElement = document.querySelector("#cityGirl");
+  let cityElement = document.querySelector("#mainCity");
   let cityInput = document.querySelector("#city-input");
   cityElement.innerHTML = cityInput.value;
 }
