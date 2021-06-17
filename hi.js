@@ -32,7 +32,7 @@ function currentWeather(response) {
   document
     .querySelector("#icon")
     .setAttribute(
-      "src",
+      "d-flex circle",
       `http://openweathermap.org/img/wn/${respose.data.weather[0].icon}@2x.png`
     );
 }
