@@ -8,7 +8,7 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Saty"];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let day = days[date.getDay()];
   return `${day}, ${hours}:${minutes}`;
 }
@@ -32,9 +32,12 @@ function currentWeather(response) {
   document
     .querySelector("#icon")
     .setAttribute(
-      "d-flex circle",
+      "src",
       `http://openweathermap.org/img/wn/${respose.data.weather[0].icon}@2x.png`
     );
+  document
+    .querySelector("#icon")
+    .setAttribute("alt", response.data.weather[0].description);
 }
 function handleSubmit(event) {
   event.preventDefault();
