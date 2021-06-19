@@ -1,6 +1,7 @@
 body {
-  font-family: sans-serif;
+  font-family: "Lucida Sans Unicode";
 }
+
 .weather-app {
   border: 2px solid rgba(241, 159, 5, 0.726);
   border-top-left-radius: 100px;
@@ -10,8 +11,7 @@ body {
   box-shadow: 3px 3px 10px rgba(253, 135, 1, 0.432);
   margin: 0 auto;
   margin-top: 20px;
-
-  padding: 40px;
+  padding: 30px 0px 10px 65px;
   max-width: 600px;
 }
 .form-control {
@@ -19,41 +19,45 @@ body {
   width: auto;
   display: inline;
 }
-.h1 {
-  color: black;
-  size: 40px;
-}
+
 li:first-letter {
   text-transform: capitalize;
 }
-li:first-line {
-  text-decoration-line: underline;
-}
+
 li {
   list-style-type: none;
 }
-
-.circle {
-  border: 100px solid;
-  color: #fcfafa;
-  width: 0;
-  height: 0;
-  margin-top: 45px;
-  margin-left: 0;
-  border-top-left-radius: 180px;
-  border-top-right-radius: 180px;
-  border-bottom-left-radius: 180px;
-  border-bottom-right-radius: 180px;
+.mainCity {
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration-line: underline;
 }
 h1 {
-  color: black;
-  font-size: 70px;
+  margin-top: -45px;
+  margin-left: -45px;
+  dispaly: block;
+  color: #2b2b2bb4;
+  font-size: 90px;
   text-align: left;
 }
 .circle .units {
   display: flex;
   color: black;
+  margin-top: -30px;
+  margin-left: 0px;
 }
+.circle {
+  border: 100px solid;
+  box-shadow: 0px 1px 1px 1px #b3faf0b4;
+  color: #ffdea4b4;
+  width: 0;
+  height: 0;
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  border-bottom-left-radius: 180px;
+  border-bottom-right-radius: 180px;
+}
+
 small {
   text-align: center;
   margin: 0 auto;

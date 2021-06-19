@@ -46,16 +46,18 @@
           </div>
         </div>
       </form>
+      <br />
+
       <div class="row">
         <div class="col-6">
-          <div class="d-flex circle" id="icon" src="" alt="">
-            <h1 id="temperature">9</h1>
+          <div class="d-flex circle">
+            <h1 id="temperature">0</h1>
             <span class="units">
               <a href="#"> °C </a> |
               <a href="#">°F </a>
             </span>
           </div>
-          <p></p>
+          <br />
           <div class="col-6">
             <ul id="conditions">
               <li>Humidity: <span id="humidity"></span>%</li>
@@ -65,12 +67,14 @@
             </ul>
           </div>
         </div>
+
         <div class="col-6">
-          <ul id="conditions">
-            <li id="mainCity">London</li>
+          <ul>
+            <li class="mainCity" id="mainCity">City</li>
             <li>Last updated: <span id="date"> </span></li>
             <li id="weatherCondition"></li>
           </ul>
+          <br />
           <div class="container">
             <div class="row text-center week-forecast">
               <div class="col">Mon</div>
