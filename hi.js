@@ -21,23 +21,20 @@ function currentWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("weatherCondition").innerHTML =
+    response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = Math.round(
     response.data.main.humidity
   );
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#weatherCondition").innerHTML =
-    response.data.weather[0].description;
-  document
-    .querySelector("#icon")
-    .setAttribute(
-      "src",
-      `http://openweathermap.org/img/wn/${respose.data.weather[0].icon}@2x.png`
-    );
   document
     .querySelector("#icon")
     .setAttribute("alt", response.data.weather[0].description);
+  document.querySelector(
+    "#icon"
+  ).style.backgroundImage = `url("http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png")`;
 }
 function handleSubmit(event) {
   event.preventDefault();
