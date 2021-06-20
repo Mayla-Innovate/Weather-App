@@ -21,7 +21,7 @@ function currentWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-  document.querySelector("weatherCondition").innerHTML =
+  document.querySelector("#weatherCondition").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = Math.round(
     response.data.main.humidity
