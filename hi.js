@@ -18,6 +18,7 @@ function currentWeather(response) {
   document.querySelector("#feelsLike").innerHTML = Math.round(
     response.data.main.feels_like
   );
+
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );

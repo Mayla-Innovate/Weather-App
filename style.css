@@ -65,7 +65,11 @@ h1 {
   border-bottom-left-radius: 180px;
   border-bottom-right-radius: 180px;
 }
+h5 {
+  margin: 0 auto;
 
+  display: block;
+}
 small {
   text-align: center;
   margin: 0 auto;
