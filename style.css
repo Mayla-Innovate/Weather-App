@@ -1,6 +1,9 @@
 body {
   font-family: "Lucida Sans Unicode";
   color: #2b2b2bd5;
+  background: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .weather-app {
@@ -9,12 +12,12 @@ body {
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 100px;
-  box-shadow: 3px 3px 10px rgba(255, 136, 102, 0.67);
+  box-shadow: 3px 3px 10px #f7a19b;
   margin: 0 auto;
   margin-top: 20px;
   padding: 30px 0px 10px 65px;
   max-width: 600px;
-  background-color: rgba(255, 251, 246, 0.795);
+  background-color: rgba(255, 251, 246, 0.904);
 }
 .form-control-1 {
   display: inline;
@@ -53,7 +56,7 @@ h1 {
 }
 .circle {
   border: 100px solid;
-  box-shadow: 3px 3px 10px rgba(255, 136, 102, 0.67);
+  box-shadow: 3px 3px 10px #f7a19b;
   color: #ffdea42d;
   width: 0;
   height: 0;
