@@ -20,9 +20,8 @@ function currentWeather(response) {
   );
 
   celciusTemperature = response.data.main.temp;
-  document.querySelector("#temperature").innerHTML = Math.round(
-  celciusTemperature
-  );
+  document.querySelector("#temperature").innerHTML =
+    Math.round(celciusTemperature);
   document.querySelector("#weatherCondition").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = Math.round(
@@ -74,15 +73,17 @@ function displayFahrenheitTemperature(event) {
   event.preventDefault();
   celciuslink.classList.remove("active");
   fahrenheitlink.classList.add("active");
-  let fahrenheiTemperature = (celciusTemperature × 9) / 5 + 32;
-  document.querySelector("#temperature").innerHTML = Math.round(fahrenheiTemperature);
+  let fahrenheiTemperature = (celciusTemperature * 9) / 5 + 32;
+  document.querySelector("#temperature").innerHTML =
+    Math.round(fahrenheiTemperature);
 }
 
 function displayCelciusTemperature(event) {
   event.preventDefault();
   celciuslink.classList.add("active");
   fahrenheitlink.classList.remove("active");
-  document.querySelector("#temperature").innerHTML = Math.round(celciusTemperature);
+  document.querySelector("#temperature").innerHTML =
+    Math.round(celciusTemperature);
 }
 
 let celciusTemperature = null;
