@@ -50,18 +50,17 @@
 
       <div class="row">
         <div class="col-6">
-          <div class="d-flex circle" id="icon" alt="">
-            <h1 id="temperature">0</h1>
-            <span class="units">
-              <a href="#"> °C </a> |
-              <a href="#">°F </a>
-            </span>
+          <div class="clearfix weather-temperature">
+            <div class="d-flex circle" id="icon" alt="">
+              <h1 id="temperature">0</h1>
+              <span class="units">
+                <a href="#" id="celcius-link" class="active"> °C </a> |
+                <a href="#" id="fahrenheit-link" class="active">°F </a>
+              </span>
+            </div>
           </div>
           <br />
-          <h5>
-            Max: <span id="maxTemp"> </span> | Min:
-            <span id="minTemp"></span>
-          </h5>
+
           <div class="col-6">
             <ul id="conditions">
               <li>Humidity: <span id="humidity"> </span>%</li>
