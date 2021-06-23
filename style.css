@@ -50,14 +50,11 @@ h1 {
 }
 .circle .units {
   display: flex;
-  color: black;
+
   margin-top: -30px;
   margin-left: 0px;
 }
 .circle {
-  border: 100px solid;
-  box-shadow: 3px 3px 10px #f7a19b;
-  color: #ffdea42d;
   width: 0;
   height: 0;
   border-top-left-radius: 180px;
@@ -83,4 +80,8 @@ small {
   cursor: default;
   text-decoration: none;
   color: black;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
 }
