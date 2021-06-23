@@ -64,12 +64,16 @@ h1 {
   border-top-right-radius: 180px;
   border-bottom-left-radius: 180px;
   border-bottom-right-radius: 180px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
 }
 h5 {
   margin: 0 auto;
 
   display: block;
 }
+
 small {
   text-align: center;
   margin: 0 auto;
