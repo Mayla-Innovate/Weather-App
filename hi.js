@@ -37,8 +37,15 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
   console.log(forecastHTML);
 }
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "96052d9ea7e0c95a2d16b35ea2a40041";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function currentWeather(response) {
-  console.log(response.data);
+  console.log(response.data.daily);
   document.querySelector("#mainCity").innerHTML = response.data.name;
   document.querySelector("#feelsLike").innerHTML = Math.round(
     response.data.main.feels_like
@@ -60,8 +67,11 @@ function currentWeather(response) {
   document.querySelector(
     "#icon"
   ).style.backgroundImage = `url("http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png")`;
+
+  document.querySelector("#icon").classList.add("no-border");
+
+  getForecast(response.data.coord);
 }
-document.querySelector("#icon").classList.add("no-border");
 function handleSubmit(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city-input").value;
