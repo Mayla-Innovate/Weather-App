@@ -41,8 +41,8 @@ li {
   text-decoration-line: underline;
 }
 h1 {
-  margin-top: -45px;
-  margin-left: -45px;
+  padding-top: -45px;
+  padding-left: -45px;
   display: block;
   color: #000000c0;
   font-size: 90px;
@@ -50,19 +50,24 @@ h1 {
 }
 .circle .units {
   display: flex;
-
-  margin-top: -30px;
-  margin-left: 0px;
 }
 .circle {
-  width: 0;
-  height: 0;
+  padding-left: 45px;
+  box-shadow: 3px 3px 10px #f7a19b;
+  color: #ffdea42d;
+  width: 200px;
+  height: 200px;
   border-top-left-radius: 180px;
   border-top-right-radius: 180px;
   border-bottom-left-radius: 180px;
   border-bottom-right-radius: 180px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center right;
   background-size: 150px;
 }
 h5 {

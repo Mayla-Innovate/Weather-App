@@ -13,7 +13,7 @@ function formatDate(date) {
   return `${day}, ${hours}:${minutes}`;
 }
 funtion displayForecast(){
-  let forecastElement = dpcument.querySelector("#week-forecast");
+  let forecastElement = dpcument.querySelector("#weather-forecast");
   let days = ["Thu", "Fri", "Sat", "Sun"];
   let forecastHTML = `<div class="row text-center week-forecast">`;
   days.forEach(function (day) {
@@ -60,6 +60,11 @@ function currentWeather(response) {
   document.querySelector(
     "#icon"
   ).style.backgroundImage = `url("http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png")`;
+}
+ document
+        .querySelector("#icon")
+    .classList.add('no-border');
+    
 }
 function handleSubmit(event) {
   event.preventDefault();
