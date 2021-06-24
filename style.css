@@ -41,8 +41,8 @@ li {
   text-decoration-line: underline;
 }
 h1 {
-  padding-top: -45px;
-  padding-left: -45px;
+  padding-top: 45px;
+  padding-left: 15px;
   display: block;
   color: #000000c0;
   font-size: 90px;
@@ -50,6 +50,7 @@ h1 {
 }
 .circle .units {
   display: flex;
+  padding-top: 55px;
 }
 .circle {
   padding-left: 45px;
