@@ -12,11 +12,11 @@ function formatDate(date) {
   let day = days[date.getDay()];
   return `${day}, ${hours}:${minutes}`;
 }
-funtion displayForecast{
-  let forecastElement = dpcument.querySelector("#forecast");
+funtion displayForecast(){
+  let forecastElement = dpcument.querySelector("#week-forecast");
   let days = ["Thu", "Fri", "Sat", "Sun"];
   let forecastHTML = `<div class="row text-center week-forecast">`;
-  days.forEach(function (day)) {
+  days.forEach(function (day) {
     forecastHTML = forecastHTML + `
               <div class="col">
                 <div class="weather-date">${day}</div>
