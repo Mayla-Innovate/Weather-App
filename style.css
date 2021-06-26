@@ -30,10 +30,15 @@ body {
 
 li:first-letter {
   text-transform: capitalize;
+  display: inline-block;
 }
 
 li {
   list-style-type: none;
+}
+li:hover {
+  font-size: 18px;
+  text-shadow: 0px 0px 1px #2b2b2bc0;
 }
 .mainCity {
   font-weight: bold;
@@ -78,9 +83,7 @@ h5 {
 }
 
 small {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
+  padding-left: 150px;
 }
 .weather-temperature .active {
   cursor: default;
