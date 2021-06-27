@@ -19,6 +19,7 @@ body {
   max-width: 600px;
   background-color: rgba(255, 255, 255, 0.904);
 }
+
 .form-control-1 {
   display: inline;
   padding: 6px;
@@ -36,9 +37,16 @@ li:first-letter {
 li {
   list-style-type: none;
 }
-li:hover {
-  font-size: 18px;
-  text-shadow: 0px 0px 1px #2b2b2bc0;
+
+.conditions:hover {
+  font-size: 16px;
+
+  padding: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-shadow: 1px 1px 1px #f7a19b;
 }
 .mainCity {
   font-weight: bold;
@@ -47,7 +55,7 @@ li:hover {
 }
 h1 {
   padding-top: 45px;
-  padding-left: 15px;
+  padding-right: 15px;
   display: block;
   color: #000000c0;
   font-size: 90px;
@@ -93,4 +101,21 @@ small {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
+}
+
+.weather-forecast-min {
+  color: rgb(184, 183, 183);
+}
+.weather-date {
+  font-weight: bold;
+  padding: 1px 1px 1px 1px;
+  color: #2b2b2bc0;
+  background-color: #ffffff;
+  border: 1px solid #fffefe;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #f7a19b;
+}
+
+.no-border {
+  box-shadow: none;
 }
